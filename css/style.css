@@ -104,7 +104,7 @@ a { text-decoration: 	none;}
 .b-right-side__log-grup,
 .b-right-side__pass-grup,
 .b-right-side__check_wrap {
-	margin: 0 10% 20px 10%;
+							margin: 0 10% 20px 10%;
 }
 
 
@@ -145,6 +145,9 @@ a { text-decoration: 	none;}
 	opacity: 			0;
 	margin: 			25px 5px 25px 0;
 	display: 			inline-block;
+	cursor: 			pointer;
+	z-index: 			5;
+
 
 
 
@@ -248,8 +251,8 @@ a { text-decoration: 	none;}
 	}  
 
     .b-inner-wrap__left-side {
-    	width: 			100%;
-    	padding-top: 	30px;
+    	width: 								100%;
+    	padding-top: 						30px;
     	-webkit-box-ordinal-group: 			3;
     	    -ms-flex-order: 				2;
     	        order: 						2;
@@ -272,6 +275,6 @@ a { text-decoration: 	none;}
     } 
 
     .b-sign__btn {
-    	margin-left: 5%;
+    	margin-left: 					5%;
     }
 }
