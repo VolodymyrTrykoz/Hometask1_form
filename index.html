@@ -10,57 +10,59 @@
 <body>
 	<form class="content" action="action_page.php" method="post">
 
-		<h2 class="heading grey-33">Log in to the Site
+			<h2 class="b-heading">Log in to the Site
 
-				<a href="#" class="close"> 
-					<i class="fa fa-times" aria-hidden="true"></i>
-				</a>
+					<a href="#" class="b-heading__close"> 
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>
 
-		</h2>
+			</h2>
 
-			<div class="inner-wrap">
-				<div class="left-side">
-
+			<div class="b-inner-wrap">
+				<div class="b-inner-wrap__left-side">
+					<!--for small screen only-->
 					<hr class="divider">
 
-					<button class="left-side__social fb" 	type="submit">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
+					<a href="#" class="b-left-side-btn b-left-side-btn__fb">
+						<i class="fa fa-facebook b-btn-fb-i" aria-hidden="true"></i>
 						Log in with Facebook
-					</button>
+					</a> 
 
-					<button class="left-side__social google_plus" type="submit">
-						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					<a href="#" class="b-left-side-btn b-left-side-btn__google_plus">
+						<i class="fa fa-google-plus b-btn-google-i" aria-hidden="true"></i>
 						Log in with Google +
-					</button>
+					</a>
 
 				</div>
 
-				<div class="right-side">
+				<div class="b-inner-wrap__right-side">
 
-					<div class="log-grup log-grup--invalid">
-						<label for="login" class="login">Login</label>
-						<input type="login" class="inp_log">
+					<div class="b-right-side__log-grup b-right-side__log-grup--invalid">
+						<label for="login" class="b-log-grup__label">Login</label>
+						<input type="login" class="b-log-grup_inp" required>
 					</div>
 
-					<div class="pass-grup pass-grup--invalid">
-						<label for="password" class="password">Password</label>
-						<input type="password" class="inp_password">
+					<div class="b-right-side__pass-grup b-right-side__pass-grup--invalid">
+						<label for="password" class="b-log-grup__label">Password</label>
+						<input type="password" class="b-log-grup_inp" required>
 					</div>
 
-					<div class="check_wrap">
-						<input type="checkbox" class="checkbox" id="checkbox-1"	 name="remember_Me">
-						<label for="checkbox-1">Remember me</label>
+					<div class="b-right-side__check_wrap">
+						<input type="checkbox" class="b-check_wrap__checkbox" id="checkbox-1"	 name="remember_Me">
+						<label for="checkbox-1" class="b-check_wrap__label">Remember me</label>
 					</div>	
 					
-					<div class="subm_wrap">
-						<input type="submit" value="Sign In" class="sign-in">
-						<a href="#" class="right-side__help">Need help logging in?</a>
+					<div class="b-right-side__sign">
+						<button class="b-sign__btn">Sign In</button>
+						<a href="#" class="b-sign__help">Need help logging in?</a>
 					</div>
 
 				</div>
 			</div>
 
-		<p class="bottom">Dont have an account yet? <a href="#"> Sign up</a></p>
+		<p class="b-inner-wrap__bottom">Don't have an account yet? 
+			<a href="#" class="b-bottom-a">Sign up</a>
+		</p>
 		
 	</form>
 </body>

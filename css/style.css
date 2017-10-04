@@ -1,31 +1,28 @@
-* {
-	font: 				bold 14px arial;
-}
-.grey-33 {
-	color: 				#333333
-}
+* { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+
+a { text-decoration: 	none;}
+
 
 .content {
+	
 	background-color: 			#fff;
 	margin:  					30px auto;
-	height:  					500px;
-	max-width:  				838px;
-	min-width: 					300px;
+	max-width:  				840px;
 	border-top: 				2px solid #e62b1e;
-	position: 					relative;
 	-webkit-box-shadow: 		0px 1px 1px rgba(0,0,0,0.5);
 	        box-shadow: 		0px 1px 1px rgba(0,0,0,0.5);
 }
 
-.heading {
-	font-size: 			31px;
+.b-heading {
+	
+	font-size: 			30px;
 	text-align: 		center;
-	padding-top: 		30px;
+	padding: 			30px 0 25px 0;
 	padding-bottom: 	25px;
 	position: 			relative;
 }
 
-.fa-times {
+.b-heading__close {
 	font-size:  				20px;
 	position:  					absolute;
 	right:  					0;
@@ -36,7 +33,7 @@
 	color: 						#cacaca;
 }
 
-.inner-wrap {
+.b-inner-wrap {
 	padding: 			40px 0;
 	display: 			-webkit-box;
 	display: 			-ms-flexbox;
@@ -44,81 +41,90 @@
 	background-color: 	#f3f3f3;
 }
 
-.left-side {
+.b-inner-wrap__left-side {
 	width: 				50%;
 	text-align: 		center;
+	display: 			flex;
+	flex-direction: 	column;
 }
 
-.left-side button {
-	position: 			relative;
-}	
 
-.left-side__social{
+
+.b-left-side-btn {
+	margin: 			0 10% 20px 10%; 
 	width: 				80%;
-	height: 			40px;
+	padding: 			10px 0;
 	color: 				#fff;
 	border: 			none;
 	border-radius: 		3px;
-	font: 				bold 14px Arial;
-	margin-bottom: 		18px;
+	font-weight: 		bold;
+	font-size: 			14px;
 	cursor: 			pointer;
-	-webkit-transition: 		0.5s linear;
-	-o-transition: 		0.5s linear;
-	transition: 		0.5s linear;
+	position: 			relative;
 }
 
-.fa-facebook, .fa-google-plus {
+.b-btn-fb-i,
+.b-btn-google-i {
 	position: 			absolute;
 	left: 				5%;
 }
 
-.google {
-	padding-top: 		2px;
-	width: 				15px;
-	height: 			15px;
-}
 
-.fb {
+
+.b-left-side-btn__fb {
 	background-color: 	#3e5b96;
 }
 
-.fb:hover {
+.b-left-side-btn__fb:hover {
 	background-color: 	#1b356b;
 }
 
+
+/*For small screen only*/
 .divider {
-	opacity: 0;
+	display: none;
 }
 
-.google_plus {
+
+
+
+.b-left-side-btn__google_plus {
 	background-color: 	#dd5342;
 }
 
-.google_plus:hover {
+.b-left-side-btn__google_plus:hover {
 	background-color: 	#b92d1b;
 }
 
-.right-side {
+.b-inner-wrap__right-side {
 	width: 				50%;
-	text-align: 		center;
 	border-left: 		1px solid #cfcfcf;
-
 }
 
-.inp_log, .inp_password {
-	height: 			40px;
-	width: 				80%;
+.b-right-side__log-grup,
+.b-right-side__pass-grup,
+.b-right-side__check_wrap {
+	margin: 0 10% 20px 10%;
+}
+
+
+
+
+
+.b-log-grup_inp, .b-log-grup_inp {
+	font-size: 			14px;
+	padding: 			10px 0;
+	width: 				100%;
 	border: 			1px solid #dddddd;
 	border-radius: 		3px;
 
 }
 
-.login , .password {
+.b-log-grup__label {
 	display:  			block;
 	font-size: 			14px;
 	font-weight: 		bold;
 	text-align: 		left;
-	padding-left: 		10%;
 	padding-bottom: 	7px;
 
 }
@@ -133,32 +139,27 @@
 }
 
 
-input[type="checkbox"] {
+.b-check_wrap__checkbox {
 	position: 			relative;
 	top: 				2px;
 	opacity: 			0;
-	margin-top: 		25px;
-	margin-bottom: 		23px;
-	margin-left: 		0;
+	margin: 			25px 5px 25px 0;
 	display: 			inline-block;
 
 
-}
-
-.check_wrap {
-	padding-left: 		10%;
-	text-align: 		left;
 
 }
 
-.check_wrap label {
+
+
+.b-check_wrap__label {
 	font-weight: 		bold;
 	font-size: 			14px;
 	position: 			relative;
 
 }
 
-.check_wrap label::before {
+.b-check_wrap__label::before {
 	content: 			"";
     display: 			inline-block;
     position: 			absolute;
@@ -170,52 +171,42 @@ input[type="checkbox"] {
     top: 				1px;
 }
 
- input[type=checkbox]:checked + label:before {
+ .b-check_wrap__checkbox:checked + .b-check_wrap__label::before {
     content: 			"✓";
     font-size: 			12px;
     color: 				#fff;
     text-align: 		center;
 }
-.subm_wrap {
-	text-align: 		left;
-	padding-left: 		10%;
 
-}
 
-.sign-in {
-	height: 			40px;
-	width: 				100px;
+.b-sign__btn {
+	margin: 			0 10%;
+	padding: 			10px 15px;
 	border: 			none;
 	border-radius: 		3px;
 	cursor: 			pointer;
 	color: 				#fff;
-	-webkit-transition: 		0.5s linear;
-	-o-transition: 		0.5s linear;
-	transition: 		0.5s linear;
 	background-color: 	#252525;
 	font-weight: 		bold;
 	font-size: 			14px;
 
 }
 
-.sign-in:hover {
+.b-sign__btn:hover {
 	background-color: 	#757070;
 }
 
-.right-side__help {
-	margin-left: 		15%;
+.b-sign__help {
 	color: 				#454545;
-
 }
 
-.right-side__help:hover {
-	color: 				#252525;
+.b-sign__help:hover {
+	color: 				#151515;
 	
 }
 
 
-.bottom {
-	width: 				100%;
+.b-inner-wrap__bottom {
 	color: 				#cfcfcf;
 	font-size: 			18px;
 	font-weight: 		100;
@@ -226,7 +217,7 @@ input[type="checkbox"] {
 	
 }
 
-.bottom a {
+.b-bottom-a {
 	font-weight: 		400;
 	color: 				#000000;
 }
@@ -235,12 +226,12 @@ input[type="checkbox"] {
 
 /*------for validation-------*/
 /*
-.log-grup--invalid input,
-.pass-grup--invalid input {
+.b-log-grup_inp,
+.b-log-grup_inp {
 	border: 1px solid #bf0c00;
 }
 
-.login, .password {
+.b-log-grup__label {
 	color: #bf0c00;
 }
 */
@@ -248,7 +239,7 @@ input[type="checkbox"] {
 
 
 @media screen and (max-width: 768px) {
-	.inner-wrap {
+	.b-inner-wrap {
 		display: 		-webkit-box;
 		display: 		-ms-flexbox;
 		display: 		flex;
@@ -256,7 +247,7 @@ input[type="checkbox"] {
 		    flex-flow: 		wrap;
 	}  
 
-    .left-side {
+    .b-inner-wrap__left-side {
     	width: 			100%;
     	padding-top: 	30px;
     	-webkit-box-ordinal-group: 			3;
@@ -265,18 +256,22 @@ input[type="checkbox"] {
     }
 
     .divider {
-		opacity: 					1;
+		display:  					block;
 		height: 					1px;
 		color: 						#cfcfcf;
 		margin-bottom: 				50px;
 		width: 						80%;
 	}
 
-    .right-side {
+    .b-inner-wrap__right-side {
     	width: 							100%;
     	-webkit-box-ordinal-group: 		2;
     	    -ms-flex-order: 			1;
     	        order: 					1;
     	padding-bottom: 				30px;
+    } 
+
+    .b-sign__btn {
+    	margin-left: 5%;
     }
 }
